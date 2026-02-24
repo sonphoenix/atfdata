@@ -1,0 +1,11 @@
+Model Information:
+* title:	Silenced Pistols
+* source:	https://sketchfab.com/3d-models/silenced-pistols-7a7ab21a1ff546cc93f8ca4a640d4fe2
+* author:	VidovicArts (https://sketchfab.com/oshjavid)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Silenced Pistols" (https://sketchfab.com/3d-models/silenced-pistols-7a7ab21a1ff546cc93f8ca4a640d4fe2) by VidovicArts (https://sketchfab.com/oshjavid) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

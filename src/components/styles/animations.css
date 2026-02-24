@@ -1,0 +1,577 @@
+/* ===============================================
+   PERSONA 5 STYLE ANIMATIONS FOR MODAL
+   =============================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&display=swap');
+
+/* ===============================================
+   SCROLLBAR STYLES
+   =============================================== */
+
+.tech-stack-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tech-stack-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.tech-stack-container::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 4px;
+}
+
+.tech-stack-container::-webkit-scrollbar-thumb:hover {
+  background: #FFA500;
+}
+
+/* ===============================================
+   HOVER EFFECTS
+   =============================================== */
+
+.esc-back-button:not([data-animating="true"]):hover {
+  transform: scale(1.1) !important;
+  border-color: #FFA500 !important;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+.esc-back-button[data-animating="true"] {
+  pointer-events: none;
+}
+
+.stat-label-box:hover {
+  transform: skewX(-3deg) scale(1.1) !important;
+  box-shadow: 5px 5px 0px rgba(184, 134, 11, 0.7), 0 0 25px rgba(255, 215, 0, 0.6) !important;
+}
+
+.tech-stack-item:hover {
+  transform: skewX(-3deg) scale(1.1) translateY(-3px) !important;
+  box-shadow: 5px 5px 0 rgba(184, 134, 11, 0.8), 0 0 25px rgba(255, 215, 0, 0.6) !important;
+  background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%) !important;
+}
+
+.image-preview-block:hover {
+  transform: scale(1.15) !important;
+  border-color: #FFA500 !important;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.image-preview-block:hover .image-preview-overlay {
+  opacity: 1 !important;
+}
+
+.dropdown-action-link:hover {
+  background: rgba(255, 215, 0, 0.1) !important;
+  padding-left: 2rem !important;
+  box-shadow: inset 4px 0 0 currentColor;
+}
+
+.dropdown-action-link:active {
+  background: rgba(255, 215, 0, 0.2) !important;
+  transform: scale(0.98);
+}
+
+/* ===============================================
+   MODAL ENTRANCE/EXIT ANIMATIONS
+   =============================================== */
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes contentZoomOut {
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+/* ===============================================
+   EPIC CLOSE ANIMATIONS (4-STAGE SEQUENCE)
+   =============================================== */
+
+/* Stage 1: Flash effect */
+@keyframes closeFlash {
+  0% {
+    opacity: 0;
+    background: radial-gradient(circle at center, rgba(255,215,0,0) 0%, transparent 100%);
+  }
+  20% {
+    opacity: 1;
+    background: radial-gradient(circle at center, rgba(255,215,0,0.9) 0%, rgba(255,165,0,0.7) 50%, transparent 100%);
+  }
+  40% {
+    opacity: 0.8;
+    background: radial-gradient(circle at center, rgba(255,215,0,0.6) 0%, rgba(255,140,0,0.4) 50%, transparent 100%);
+  }
+  100% {
+    opacity: 0;
+    background: radial-gradient(circle at center, rgba(255,215,0,0) 0%, transparent 100%);
+  }
+}
+
+@keyframes closePulse {
+  0%, 100% { 
+    transform: translate(-50%, -50%) scale(1); 
+    opacity: 0.3;
+  }
+  50% { 
+    transform: translate(-50%, -50%) scale(1.1); 
+    opacity: 0.8;
+  }
+}
+
+/* Stage 2: Glitch effect */
+@keyframes closeGlitchOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+  }
+  10% {
+    opacity: 0.9;
+    transform: translateX(-5px) skewX(-2deg);
+    filter: hue-rotate(90deg);
+  }
+  20% {
+    opacity: 0.8;
+    transform: translateX(5px) skewX(2deg);
+    filter: hue-rotate(-90deg);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(-3px) skewX(-1deg);
+  }
+  40% {
+    opacity: 0.6;
+    transform: translateX(3px) skewX(1deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0) skewX(0);
+  }
+}
+
+/* Stage 3: Implosion */
+@keyframes closeImplode {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(5deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes closeShake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-8px); }
+  20%, 40%, 60%, 80% { transform: translateX(8px); }
+}
+
+/* Stage 4: Final fade to black */
+@keyframes closeFadeToBlack {
+  0% { 
+    opacity: 0;
+    background: radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
+  }
+  50% { 
+    opacity: 0.7;
+    background: radial-gradient(circle at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.9) 100%);
+  }
+  100% { 
+    opacity: 1;
+    background: radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+  }
+}
+
+@keyframes sparkleOut {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/* ===============================================
+   ENTRANCE ANIMATIONS
+   =============================================== */
+
+@keyframes redFlash {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 0; }
+}
+
+@keyframes diagonalWipe {
+  from { left: -100%; }
+  to { left: 100%; }
+}
+
+@keyframes diagonalWipeOut {
+  from { right: -100%; }
+  to { right: 100%; }
+}
+
+@keyframes slideInTopLeft {
+  from {
+    opacity: 0;
+    transform: translate(-200px, -200px) skewX(-45deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) skewX(-45deg);
+  }
+}
+
+@keyframes slideInBottomRight {
+  from {
+    opacity: 0;
+    transform: translate(200px, 200px) skewX(-45deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) skewX(-45deg);
+  }
+}
+
+@keyframes slideOutTopLeft {
+  to {
+    opacity: 0;
+    transform: translate(-200px, -200px) skewX(-45deg);
+  }
+}
+
+@keyframes slideOutBottomRight {
+  to {
+    opacity: 0;
+    transform: translate(200px, 200px) skewX(-45deg);
+  }
+}
+
+@keyframes slideInTopBounce {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textReveal {
+  to { width: 100%; }
+}
+
+@keyframes glitchPulse {
+  0%, 100% { transform: skewX(-5deg); }
+  25% { transform: skewX(-5deg) translateX(-2px); filter: hue-rotate(90deg); }
+  75% { transform: skewX(-5deg) translateX(2px); filter: hue-rotate(-90deg); }
+}
+
+@keyframes statusBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ===============================================
+   3D MODEL ANIMATIONS
+   =============================================== */
+
+@keyframes modelReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotateY(-20deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes modelGlowExpand {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.1;
+  }
+}
+
+@keyframes modelZoomOut {
+  to {
+    transform: scale(0.5) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+/* ===============================================
+   STAR ANIMATIONS
+   =============================================== */
+
+@keyframes starRingExpand {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+}
+
+@keyframes starFadeOut {
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes pulseRing {
+  0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.3; }
+  50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.1; }
+  100% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.3; }
+}
+
+/* ===============================================
+   STAT LABEL ANIMATIONS
+   =============================================== */
+
+@keyframes statPopIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0) rotate(-45deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes statFadeOut {
+  to {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes textGlow {
+  0% { text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(255,215,0,0.3); }
+  100% { text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.6); }
+}
+
+/* ===============================================
+   TECH STACK ANIMATIONS
+   =============================================== */
+
+@keyframes techSlideIn {
+  from {
+    opacity: 0;
+    transform: skewX(-3deg) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: skewX(-3deg) translateY(0);
+  }
+}
+
+@keyframes techFadeOut {
+  to {
+    transform: skewX(-3deg) translateY(30px);
+    opacity: 0;
+  }
+}
+
+/* ===============================================
+   BUTTON ANIMATIONS
+   =============================================== */
+
+@keyframes buttonSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes buttonPressOut {
+  to {
+    transform: translateX(100px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* ===============================================
+   IMAGE ANIMATIONS
+   =============================================== */
+
+@keyframes imageModalFadeIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+}
+
+@keyframes imageZoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes imageBlocksSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageBlocksFadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes imageBlockPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===============================================
+   MISC ANIMATIONS
+   =============================================== */
+
+@keyframes slideOutTop {
+  to {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutBottom {
+  to {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutFast {
+  to { opacity: 0; }
+}
+
+@keyframes slideDown {
+  0%, 100% { transform: translateY(-100%); }
+  50% { transform: translateY(100vh); }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px) skewX(-45deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) skewX(-45deg);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px) skewX(-45deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) skewX(-45deg);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

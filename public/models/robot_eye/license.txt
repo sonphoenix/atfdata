@@ -1,0 +1,11 @@
+Model Information:
+* title:	Little Robot Ball
+* source:	https://sketchfab.com/3d-models/little-robot-ball-bd1792fd94fc4e82a043b8724bad8f75
+* author:	Micheal-Holloway (https://sketchfab.com/Micheal-Holloway)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Little Robot Ball" (https://sketchfab.com/3d-models/little-robot-ball-bd1792fd94fc4e82a043b8724bad8f75) by Micheal-Holloway (https://sketchfab.com/Micheal-Holloway) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

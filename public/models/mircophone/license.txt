@@ -1,0 +1,11 @@
+Model Information:
+* title:	Microphone
+* source:	https://sketchfab.com/3d-models/microphone-90d535a27bfb407e9e451f372bda6136
+* author:	senya.frozenov (https://sketchfab.com/senya.frozenov)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Microphone" (https://sketchfab.com/3d-models/microphone-90d535a27bfb407e9e451f372bda6136) by senya.frozenov (https://sketchfab.com/senya.frozenov) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

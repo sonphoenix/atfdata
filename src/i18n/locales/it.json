@@ -1,0 +1,217 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "projects": "Progetti",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "getQuote": "Richiedi Preventivo"
+  },
+"hero": {
+     "badge": "Soluzioni Innovative",
+    "title1": "Ingegneria del Software",
+    "title2": "&",
+    "title3": "Intelligenza dei Dati",
+    "subtitle": "Costruiamo <1>applicazioni pronte per la produzione</1> e trasformiamo i tuoi dati in <2>informazioni utilizzabili</2> con analisi avanzate e IA",
+  "services": {
+    "fullstack":    "Sviluppo Full-Stack",
+    "dataAnalysis": "Analista di Dati"
+  },
+  "stats": {
+    "projects":   "Progetti Realizzati",
+    "openSource": "Open Source",
+    "liveApps":   "App Live",
+    "paths":      "Percorsi"
+  }
+},
+  "chatbot": {
+    "welcome": "👋 Ciao! Sono l'assistente per questo portfolio. Come posso aiutarti oggi?",
+    "title": "Assistente",
+    "subtitle": "Sono qui per aiutare!",
+    "inputPlaceholder": "Scrivi il tuo messaggio...",
+    "actions": {
+      "bookMeeting": "Prenota un Meeting",
+      "askQuestion": "Fai una Domanda",
+      "viewProjects": "Vedi Progetti",
+      "learnServices": "Scopri i Servizi"
+    },
+    "userMessages": {
+      "bookMeeting": "Voglio prenotare un meeting",
+      "question": "Ho una domanda",
+      "projects": "Mostrami i tuoi progetti",
+      "services": "Che servizi offri?"
+    },
+    "botMessages": {
+      "openingSchedule": "Ottimo! Ti apro l'interfaccia di pianificazione...",
+      "helpQuestion": "Sono qui per aiutare! Sentiti libero di chiedermi qualsiasi cosa sui miei servizi, esperienza o progetti.",
+      "projectsInfo": "Ho lavorato su vari progetti nello sviluppo full-stack e nell'analisi dei dati. Scorri verso il basso fino alla sezione del portale per esplorare la mia galassia di progetti! 🚀",
+      "servicesInfo": "Mi specializzo in sviluppo full-stack (React, Node.js, Python) e analisi dati/ML (TensorFlow, PyTorch, BigQuery). Dai un'occhiata alla sezione 'Cosa Facciamo' qui sopra per maggiori dettagli!",
+      "default": "Grazie per il tuo messaggio! Per richieste specifiche, usa le azioni rapide qui sopra o prenota un meeting per discutere in dettaglio.",
+      "scheduleResponse": "Sarei felice di incontrarti! Clicca sul pulsante 'Prenota un Meeting' qui sopra per fissare un orario che fa per te.",
+      "projectResponse": "Scopri i miei progetti scorrendo verso il basso fino alla sezione del portale ed entrando nella galassia dei progetti!",
+      "skillsResponse": "Ho esperienza in sviluppo full-stack, analisi dati e IA/ML. Vedi la sezione 'Cosa Facciamo' per i dettagli!",
+      "contactResponse": "Puoi contattarmi prenotando un meeting o usando il modulo di contatto. Rispondo tipicamente entro 24 ore!"
+    }
+  },
+  "whatWeDo": {
+    "badge": "La Nostra Competenza",
+    "title": "Cosa Facciamo",
+    "services": {
+      "software": {
+        "tag": "Full Stack",
+        "title": "Sviluppo Software",
+        "description": "Costruiamo applicazioni web e mobile scalabili e ad alte prestazioni utilizzando le tecnologie più recenti."
+      },
+      "data": {
+        "tag": "Analisi",
+        "title": "Soluzioni Dati & IA",
+        "description": "Trasforma i tuoi dati in informazioni utilizzabili con le nostre soluzioni di analisi e machine learning basate sull'IA."
+      }
+    },
+    "technologies": "Tecnologie",
+    "serviceLabel": "SERVIZIO"
+  },
+  "portal": {
+    "badge": "PORTALE DIMENSIONALE",
+    "title1": "Entra nella",
+    "title2": "GALASSIA DEI PROGETTI",
+    "description": "Attraversa il portale ed esplora un universo interattivo di progetti. Naviga in un mondo ispirato a Mario Galaxy dove ogni pianeta rappresenta una creazione unica.",
+    "clickToEnter": "CLICCA PER ENTRARE",
+    "hint": "Passa il mouse sul portale per entrare"
+  },
+  "common": {
+    "engineeringExcellence": "Eccellenza Ingegneristica"
+  },
+  "projectsGalaxy": {
+    "controls": {
+      "title": "CONTROLLI",
+      "move": "Muovi:",
+      "moveKeys": "Frecce / WASD",
+      "select": "Seleziona:",
+      "selectKeys": "Invio / Spazio",
+      "click": "Clicca:",
+      "clickAction": "Naviga verso i Pianeti"
+    },
+    "worldTitle": "Percorsi di Servizi",
+    "paths": {
+      "software": "Percorso Ingegneria Software",
+      "data": "Percorso Analista Dati"
+    },
+    "topControls": {
+      "clickHint": "Clicca su qualsiasi pianeta per navigare!",
+      "cameraControls": "Controlli Fotocamera",
+      "modelControls": "Controlli Modello 3D"
+    },
+    "statsInfo": {
+      "title": "Metodologia Statistiche Progetto",
+      "subtitle": "Ogni progetto viene analizzato dinamicamente in base alla struttura effettiva del codice e alle tecnologie.",
+      "scoreRange": "Range Punteggio: 60-100 punti (Base 60)",
+      "intelligentRouting": {
+        "title": "Strategia di Analisi Intelligente",
+        "description": "Il nostro sistema rileva automaticamente il tipo di progetto e utilizza il metodo di analisi ottimale:",
+        "dataProjects": "Progetti Dati → Calcolatore Analista Dati",
+        "dataDesc": "Rileva Pandas, NumPy, Airflow, Streamlit, NLP",
+        "githubAnalysis": "Analisi GitHub",
+        "githubDesc": "Per repository pubblici con struttura adeguata",
+        "softwareCalculator": "Calcolatore Ingegneria Software",
+        "softwareDesc": "Per applicazioni web/mobile standard",
+        "detectionLogic": "Rilevamento Intelligente: Pandas + NumPy → Calcolatore Analista Dati",
+        "detectionLogic2": "Rilevamento Intelligente: Laravel + React → Calcolatore Software"
+      },
+      "typeScoring": {
+        "title": "Punteggio Specifico per Tipo di Progetto",
+        "dataProjects": "Progetti Analista Dati",
+        "dataDetails": "Punteggio Base: 70, Pandas: +20 punti, Airflow: +22 punti, PyTorch: +22 punti",
+        "softwareProjects": "Progetti Ingegneria Software",
+        "softwareDetails": "Punteggio Base: 60, Laravel: +20 punti, React Native: +18 punti, Docker: +5 punti"
+      },
+      "githubAnalysis": {
+        "title": "Analisi Codice GitHub",
+        "description": "Per progetti con URL GitHub, il sistema esegue analisi in tempo reale del codice effettivo includendo:",
+        "fileStructure": {
+          "title": "Struttura File",
+          "desc": "Analizza organizzazione cartelle, struttura src/, e pattern di file"
+        },
+        "packageAnalysis": {
+          "title": "Analisi Pacchetti",
+          "desc": "Analizza package.json, requirements.txt, composer.json per dipendenze"
+        },
+        "testCoverage": {
+          "title": "Copertura Test",
+          "desc": "Rileva file di test e calcola il rapporto test/sorgente"
+        },
+        "cicd": {
+          "title": "CI/CD & Deployment",
+          "desc": "Controlla Docker, GitHub Actions e configurazioni di deployment"
+        }
+      },
+      "categories": {
+        "frontend": {
+          "title": "Frontend",
+          "subtext": "UI/UX per software, Dashboard per dati",
+          "software": "Software: React/Next.js",
+          "softwarePoints": "+15-20 punti",
+          "data": "Dati: Streamlit/Dash",
+          "dataPoints": "+18-20 punti",
+          "uiLibraries": "Librerie UI",
+          "uiLibrariesPoints": "+12 max",
+          "advancedViz": "Visualizzazioni Avanzate",
+          "advancedVizPoints": "+10 punti"
+        },
+        "backend": {
+          "title": "Backend",
+          "subtext": "APIs per software, ETL per dati",
+          "software": "Software: Laravel/Django",
+          "softwarePoints": "+20-22 punti",
+          "data": "Dati: Pandas/ETL",
+          "dataPoints": "+20 punti",
+          "apiDesign": "Design API",
+          "apiDesignPoints": "+10 max",
+          "pipeline": "Complessità Pipeline",
+          "pipelinePoints": "+12 punti"
+        },
+        "database": {
+          "title": "Database",
+          "subtext": "SQL/NoSQL per entrambi i tipi",
+          "systems": "PostgreSQL/MySQL",
+          "systemsPoints": "+15-20 punti",
+          "orm": "ORM: SQLAlchemy",
+          "ormPoints": "+12 punti",
+          "schema": "Design Schema",
+          "schemaPoints": "+8 punti",
+          "multipleDB": "Supporto Multipli DB",
+          "multipleDBPoints": "+7 punti"
+        },
+        "devops": {
+          "title": "DevOps",
+          "subtext": "Deployment per software, Orchestrazione per dati",
+          "software": "Software: Deployato in Produzione",
+          "softwarePoints": "+25 punti",
+          "data": "Dati: Apache Airflow",
+          "dataPoints": "+22 punti",
+          "docker": "Docker",
+          "dockerPoints": "+5-12 punti",
+          "cicd": "CI/CD",
+          "cicdPoints": "+8 punti"
+        },
+        "features": {
+          "title": "Funzionalità",
+          "subtext": "Funzioni IA per entrambi, specializzate per ciascuno",
+          "software": "Software: Integrazione IA/ML",
+          "softwarePoints": "+25 max",
+          "data": "Dati: PyTorch/TensorFlow",
+          "dataPoints": "+20-22 punti",
+          "nlp": "NLP (NLTK/SpaCy)",
+          "nlpPoints": "+9-18 punti",
+          "external": "Integrazioni Terze Parti",
+          "externalPoints": "+12 max"
+        }
+      },
+      "footer": {
+        "title": "Miglioramenti Chiave nella Nuova Strategia:",
+        "description": "1. Rilevamento Automatico: Il sistema identifica il tipo di progetto (Analista Dati vs Ingegneria Software)\n2. Calcolatori Specializzati: Algoritmi di punteggio diversi per diversi tipi di progetti\n3. Punteggi Base Più Alti: I progetti dati iniziano a 70 (non 60) per rappresentare meglio la loro complessità\n4. Routing Intelligente GitHub: I repo pubblici ottengono l'analisi GitHub, i privati ottengono il calcolatore di fallback"
+      },
+      "maxScore": "Max:"
+    }
+  }
+}

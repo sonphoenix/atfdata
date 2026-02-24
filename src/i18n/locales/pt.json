@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "contact": "Contato",
+    "getQuote": "Solicitar Orçamento"
+  },
+"hero": {
+     "badge": "Soluções Inovadoras",
+    "title1": "Engenharia de Software",
+    "title2": "&",
+    "title3": "Análise de Dados",
+    "subtitle": "Construímos <1>aplicações prontas para produção</1> e transformamos seus dados em <2>insights acionáveis</2> com análises avançadas e engenharia de dados",
+  "services": {
+    "fullstack":    "Desenvolvimento Full-Stack",
+    "dataAnalysis": "Analista de Dados"
+  },
+  "stats": {
+    "projects":   "Projetos Realizados",
+    "openSource": "Open Source",
+    "liveApps":   "Apps ao Vivo",
+    "paths":      "Caminhos"
+  }
+},
+  "chatbot": {
+    "welcome": "👋 Olá! Sou o assistente deste portfólio. Como posso ajudá-lo hoje?",
+    "title": "Assistente",
+    "subtitle": "Estou aqui para ajudar!",
+    "inputPlaceholder": "Digite sua mensagem...",
+    "actions": {
+      "bookMeeting": "Agendar Reunião",
+      "askQuestion": "Fazer Pergunta",
+      "viewProjects": "Ver Projetos",
+      "learnServices": "Conhecer Serviços"
+    },
+    "userMessages": {
+      "bookMeeting": "Quero agendar uma reunião",
+      "question": "Tenho uma pergunta",
+      "projects": "Mostre-me seus projetos",
+      "services": "Quais serviços vocês oferecem?"
+    },
+    "botMessages": {
+      "openingSchedule": "Ótimo! Vou abrir a interface de agendamento para você...",
+      "helpQuestion": "Estou aqui para ajudar! Sinta-se à vontade para perguntar sobre nossos serviços, experiência ou projetos.",
+      "projectsInfo": "Trabalhamos em vários projetos de desenvolvimento full-stack e análise de dados. Role para baixo para explorar nossa galáxia de projetos! 🚀",
+      "servicesInfo": "Somos especializados em desenvolvimento full-stack (React, Node.js, Laravel) e engenharia de dados (Python, Pandas, Airflow).",
+      "default": "Obrigado pela sua mensagem! Para consultas específicas, use as ações rápidas acima ou agende uma reunião.",
+      "scheduleResponse": "Adoraríamos nos encontrar! Clique no botão 'Agendar Reunião' acima.",
+      "projectResponse": "Confira nossos projetos rolando para baixo até a seção do portal!",
+      "skillsResponse": "Temos experiência em desenvolvimento full-stack e engenharia de dados. Veja a seção 'O Que Fazemos' para detalhes!",
+      "contactResponse": "Você pode entrar em contato agendando uma reunião ou usando o formulário de contato. Normalmente respondemos em 24 horas!"
+    }
+  },
+  "whatWeDo": {
+    "badge": "Nossa Expertise",
+    "title": "O Que Fazemos",
+    "services": {
+      "software": {
+        "tag": "Full Stack",
+        "title": "Desenvolvimento de Software",
+        "description": "Construímos aplicações web e mobile escaláveis e de alto desempenho usando as tecnologias mais recentes."
+      },
+      "data": {
+        "tag": "Análise",
+        "title": "Soluções de Dados & Engenharia",
+        "description": "Transforme seus dados em insights acionáveis com nossas pipelines de engenharia de dados, análises e soluções de visualização."
+      }
+    },
+    "technologies": "Tecnologias",
+    "serviceLabel": "SERVIÇO"
+  },
+  "portal": {
+    "badge": "PORTAL DIMENSIONAL",
+    "title1": "Entre na",
+    "title2": "GALÁXIA DE PROJETOS",
+    "description": "Atravesse o portal e explore um universo interativo de projetos.",
+    "clickToEnter": "CLIQUE PARA ENTRAR",
+    "hint": "Passe o mouse sobre o portal para entrar"
+  },
+  "contact": {
+    "badge": "ENTRE EM CONTATO",
+    "title": "Vamos Construir Algo Juntos",
+    "subtitle": "Pronto para Iniciar Seu Projeto?",
+    "description": "Seja uma aplicação web, pipeline de dados ou software personalizado, nossa equipe está aqui para dar vida à sua visão.",
+    "email": "Envie um Email",
+    "phone": "Ligue Para Nós",
+    "address": "Nos Visite",
+    "stats": {
+      "response": "Tempo de Resposta",
+      "projects": "Projetos",
+      "satisfaction": "Satisfação"
+    },
+    "form": {
+      "name": "Seu Nome",
+      "email": "Endereço de Email",
+      "company": "Empresa",
+      "message": "Sua Mensagem",
+      "sending": "Enviando...",
+      "submit": "Enviar Mensagem"
+    },
+    "success": {
+      "title": "Mensagem Enviada!",
+      "message": "Entraremos em contato em até 24 horas.",
+      "sendAnother": "Enviar Outra Mensagem"
+    }
+  },
+  "footer": {
+    "description": "Fornecedor líder de soluções de desenvolvimento de software e engenharia de dados.",
+    "quickLinks": "Links Rápidos",
+    "ourServices": "Nossos Serviços",
+    "connect": "Fale Conosco",
+    "rights": "Todos os direitos reservados",
+    "madeWith": "Feito com",
+    "byTeam": "pela equipe ATF Data",
+    "links": {
+      "home": "Início",
+      "services": "Serviços",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "services": {
+      "dataScience": "Análise de Dados",
+      "dataEngineering": "Engenharia de Dados",
+      "aiMl": "Pipelines ETL",
+      "softwareDev": "Desenvolvimento de Software"
+    },
+    "legal": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço",
+      "cookies": "Política de Cookies"
+    }
+  },
+  "common": {
+    "engineeringExcellence": "Excelência em Engenharia"
+  },
+  "projectsGalaxy": {
+    "controls": {
+      "title": "CONTROLES",
+      "move": "Mover:",
+      "moveKeys": "Setas / WASD",
+      "select": "Selecionar:",
+      "selectKeys": "Enter / Espaço",
+      "click": "Clicar:",
+      "clickAction": "Navegar para Planetas"
+    },
+    "worldTitle": "Caminhos de Serviços",
+    "paths": {
+      "software": "Caminho Engenharia de Software",
+      "data": "Caminho Analista de Dados"
+    },
+    "topControls": {
+      "clickHint": "Clique em qualquer planeta para navegar!",
+      "cameraControls": "Controles de Câmera",
+      "modelControls": "Controles de Modelo 3D"
+    },
+    "statsInfo": {
+      "title": "Metodologia de Estatísticas do Projeto",
+      "subtitle": "Cada projeto é analisado dinamicamente com base na estrutura real do código e tecnologias.",
+      "scoreRange": "Faixa de Pontuação: 60-100 pontos (Base 60)",
+      "intelligentRouting": {
+        "title": "Estratégia de Análise Inteligente",
+        "description": "Nosso sistema detecta automaticamente o tipo de projeto:",
+        "dataProjects": "Projetos de Dados → Calculadora Analista de Dados",
+        "dataDesc": "Detecta Pandas, NumPy, Airflow, Streamlit, NLP",
+        "githubAnalysis": "Análise GitHub",
+        "githubDesc": "Para repositórios públicos com estrutura adequada",
+        "softwareCalculator": "Calculadora Engenharia de Software",
+        "softwareDesc": "Para aplicações web/mobile padrão",
+        "detectionLogic": "Detecção Inteligente: Pandas + NumPy → Calculadora Analista de Dados",
+        "detectionLogic2": "Detecção Inteligente: Laravel + React → Calculadora Software"
+      },
+      "typeScoring": {
+        "title": "Pontuação Específica por Tipo de Projeto",
+        "dataProjects": "Projetos Analista de Dados",
+        "dataDetails": "Pontuação Base: 70, Pandas: +20 pontos, Airflow: +22 pontos",
+        "softwareProjects": "Projetos Engenharia de Software",
+        "softwareDetails": "Pontuação Base: 60, Laravel: +20 pontos, React Native: +18 pontos"
+      },
+      "githubAnalysis": {
+        "title": "Análise de Código GitHub",
+        "description": "Para projetos com URLs do GitHub, o sistema realiza análise em tempo real:",
+        "fileStructure": { "title": "Estrutura de Arquivos", "desc": "Analisa organização de pastas e padrões de arquivos" },
+        "packageAnalysis": { "title": "Análise de Pacotes", "desc": "Analisa package.json, requirements.txt para dependências" },
+        "testCoverage": { "title": "Cobertura de Testes", "desc": "Detecta arquivos de teste e calcula o proporção" },
+        "cicd": { "title": "CI/CD & Implantação", "desc": "Verifica Docker, GitHub Actions" }
+      },
+      "categories": {
+        "frontend": { "title": "Frontend", "subtext": "UI/UX para software, Dashboards para dados", "software": "Software: React/Next.js", "softwarePoints": "+15-20 pontos", "data": "Dados: Streamlit/Dash", "dataPoints": "+18-20 pontos", "uiLibraries": "Bibliotecas UI", "uiLibrariesPoints": "+12 máx", "advancedViz": "Visualizações Avançadas", "advancedVizPoints": "+10 pontos" },
+        "backend": { "title": "Backend", "subtext": "APIs para software, ETL para dados", "software": "Software: Laravel/Django", "softwarePoints": "+20-22 pontos", "data": "Dados: Pandas/ETL", "dataPoints": "+20 pontos", "apiDesign": "Design de API", "apiDesignPoints": "+10 máx", "pipeline": "Complexidade do Pipeline", "pipelinePoints": "+12 pontos" },
+        "database": { "title": "Banco de Dados", "subtext": "SQL/NoSQL para ambos os tipos", "systems": "PostgreSQL/MySQL", "systemsPoints": "+15-20 pontos", "orm": "ORM: SQLAlchemy", "ormPoints": "+12 pontos", "schema": "Design do Schema", "schemaPoints": "+8 pontos", "multipleDB": "Suporte a Múltiplos BDs", "multipleDBPoints": "+7 pontos" },
+        "devops": { "title": "DevOps", "subtext": "Implantação para software, Orquestração para dados", "software": "Software: Implantado em Produção", "softwarePoints": "+25 pontos", "data": "Dados: Apache Airflow", "dataPoints": "+22 pontos", "docker": "Docker", "dockerPoints": "+5-12 pontos", "cicd": "CI/CD", "cicdPoints": "+8 pontos" },
+        "features": { "title": "Recursos", "subtext": "Recursos especializados para cada tipo", "software": "Software: Integrações de Terceiros", "softwarePoints": "+25 máx", "data": "Dados: PyTorch/TensorFlow", "dataPoints": "+20-22 pontos", "nlp": "NLP (NLTK/SpaCy)", "nlpPoints": "+9-18 pontos", "external": "Integrações de Terceiros", "externalPoints": "+12 máx" }
+      },
+      "footer": {
+        "title": "Principais Melhorias na Nova Estratégia:",
+        "description": "1. Detecção Automática: O sistema identifica o tipo de projeto\n2. Calculadoras Especializadas: Algoritmos de pontuação diferentes\n3. Pontuações Base Mais Altas: Projetos de dados começam em 70\n4. Roteamento Inteligente GitHub: Repos públicos obtêm análise GitHub"
+      },
+      "maxScore": "Máx:"
+    }
+  }
+}

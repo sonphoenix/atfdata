@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+"hero": {
+   "badge": "Innovative Solutions",
+    "title1": "Software Engineering",
+    "title2": "&",
+    "title3": "Data Analysis",
+    "subtitle": "We build <1>production-ready applications</1> and transform your data into <2>actionable insights</2> with advanced analytics and data engineering",
+  "services": {
+    "fullstack":    "Full-Stack Development",
+    "dataAnalysis": "Data Analyst"
+  },
+  "stats": {
+    "projects":   "Projects Built",
+    "openSource": "Open Source",
+    "liveApps":   "Live Apps",
+    "paths":      "Career Paths"
+  }
+},
+  "chatbot": {
+    "welcome": "👋 Hi there! I'm the assistant for this portfolio. How can I help you today?",
+    "title": "Assistant",
+    "subtitle": "I'm here to help!",
+    "inputPlaceholder": "Type your message...",
+    "actions": {
+      "bookMeeting": "Book a Meeting",
+      "askQuestion": "Ask a Question",
+      "viewProjects": "View Projects",
+      "learnServices": "Learn About Services"
+    },
+    "userMessages": {
+      "bookMeeting": "I want to book a meeting",
+      "question": "I have a question",
+      "projects": "Show me your projects",
+      "services": "What services do you offer?"
+    },
+    "botMessages": {
+      "openingSchedule": "Great! Let me open the scheduling interface for you...",
+      "helpQuestion": "I'm here to help! Feel free to ask me anything about my services, experience, or projects.",
+      "projectsInfo": "I've worked on various projects in fullstack development and data analysis. Scroll down to the portal section to explore my projects galaxy! 🚀",
+      "servicesInfo": "I specialize in fullstack development (React, Node.js, Laravel) and data analysis/engineering (Python, Pandas, Airflow). Check out the 'What We Do' section above for more details!",
+      "default": "Thanks for your message! For specific inquiries, please use the quick actions above or book a meeting to discuss in detail.",
+      "scheduleResponse": "I'd love to meet with you! Click the 'Book a Meeting' button above to schedule a time that works for you.",
+      "projectResponse": "Check out my projects by scrolling down to the portal section and entering the projects galaxy!",
+      "skillsResponse": "I'm experienced in fullstack development and data analysis/engineering. See the 'What We Do' section for details!",
+      "contactResponse": "You can reach me by booking a meeting or using the contact form. I typically respond within 24 hours!"
+    }
+  },
+  "whatWeDo": {
+    "badge": "Our Expertise",
+    "title": "What We Do",
+    "services": {
+      "software": {
+        "tag": "Full Stack",
+        "title": "Software Development",
+        "description": "We build scalable, high-performance web and mobile applications using the latest technologies."
+      },
+      "data": {
+        "tag": "Analytics",
+        "title": "Data & Engineering Solutions",
+        "description": "Transform your data into actionable insights with our data engineering pipelines, analytics, and visualization solutions."
+      }
+    },
+    "technologies": "Technologies",
+    "serviceLabel": "SERVICE"
+  },
+  "portal": {
+    "badge": "DIMENSION GATE",
+    "title1": "Enter the",
+    "title2": "PROJECT GALAXY",
+    "description": "Step through the portal and explore an interactive universe of projects. Navigate through a Mario Galaxy-inspired world where each planet represents a unique creation.",
+    "clickToEnter": "CLICK TO ENTER",
+    "hint": "Hover over the portal to enter"
+  },
+  "contact": {
+    "badge": "GET IN TOUCH",
+    "title": "Let's Build Something Together",
+    "subtitle": "Ready to Start Your Project?",
+    "description": "Whether you need a web application, data pipeline, or custom software, our team is here to help bring your vision to life.",
+    "email": "Email Us",
+    "phone": "Call Us",
+    "address": "Visit Us",
+    "stats": {
+      "response": "Response Time",
+      "projects": "Projects",
+      "satisfaction": "Satisfaction"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "company": "Company",
+      "message": "Your Message",
+      "sending": "Sending...",
+      "submit": "Send Message"
+    },
+    "success": {
+      "title": "Message Sent!",
+      "message": "We'll get back to you within 24 hours.",
+      "sendAnother": "Send Another Message"
+    }
+  },
+  "footer": {
+    "description": "Leading provider of software development and data engineering solutions.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "connect": "Connect With Us",
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "byTeam": "by ATF Data Team",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "services": {
+      "dataScience": "Data Analysis",
+      "dataEngineering": "Data Engineering",
+      "aiMl": "ETL Pipelines",
+      "softwareDev": "Software Development"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "common": {
+    "engineeringExcellence": "Engineering Excellence"
+  },
+  "projectsGalaxy": {
+    "controls": {
+      "title": "CONTROLS",
+      "move": "Move:",
+      "moveKeys": "Arrow Keys / WASD",
+      "select": "Select:",
+      "selectKeys": "Enter / Space",
+      "click": "Click:",
+      "clickAction": "Navigate to Planets"
+    },
+    "worldTitle": "Project Paths",
+    "paths": {
+      "software": "Software Engineer Path",
+      "data": "Data Analyst Path"
+    },
+    "topControls": {
+      "clickHint": "Click on any planet to navigate!",
+      "cameraControls": "Camera Controls",
+      "modelControls": "3D Model Controls"
+    },
+    "statsInfo": {
+      "title": "Project Stats Methodology",
+      "subtitle": "Each project is dynamically analyzed based on actual codebase structure and technologies.",
+      "scoreRange": "Score Range: 60-100 points (Base 60)",
+      "intelligentRouting": {
+        "title": "Intelligent Analysis Strategy",
+        "description": "Our system automatically detects project type and uses the optimal analysis method:",
+        "dataProjects": "Data Projects → Data Analyst Calculator",
+        "dataDesc": "Detects Pandas, NumPy, Airflow, Streamlit, NLP",
+        "githubAnalysis": "GitHub Analysis",
+        "githubDesc": "For public repositories with proper structure",
+        "softwareCalculator": "Software Engineering Calculator",
+        "softwareDesc": "For standard web/mobile applications",
+        "detectionLogic": "Smart Detection: Pandas + NumPy → Data Analyst Calculator",
+        "detectionLogic2": "Smart Detection: Laravel + React → Software Calculator"
+      },
+      "typeScoring": {
+        "title": "Project Type-Specific Scoring",
+        "dataProjects": "Data Analyst Projects",
+        "dataDetails": "Base Score: 70, Pandas: +20 points, Airflow: +22 points, PyTorch: +22 points",
+        "softwareProjects": "Software Engineering Projects",
+        "softwareDetails": "Base Score: 60, Laravel: +20 points, React Native: +18 points, Docker: +5 points"
+      },
+      "githubAnalysis": {
+        "title": "GitHub Codebase Analysis",
+        "description": "For projects with GitHub URLs, the system performs real-time analysis of the actual codebase including:",
+        "fileStructure": { "title": "File Structure", "desc": "Analyzes folder organization, src/ structure, and file patterns" },
+        "packageAnalysis": { "title": "Package Analysis", "desc": "Parses package.json, requirements.txt, composer.json for dependencies" },
+        "testCoverage": { "title": "Test Coverage", "desc": "Detects test files and calculates test-to-source ratio" },
+        "cicd": { "title": "CI/CD & Deployment", "desc": "Checks for Docker, GitHub Actions, and deployment configs" }
+      },
+      "categories": {
+        "frontend": { "title": "Frontend", "subtext": "UI/UX for software, Dashboards for data", "software": "Software: React/Next.js", "softwarePoints": "+15-20 points", "data": "Data: Streamlit/Dash", "dataPoints": "+18-20 points", "uiLibraries": "UI Libraries", "uiLibrariesPoints": "+12 max", "advancedViz": "Advanced Visualizations", "advancedVizPoints": "+10 points" },
+        "backend": { "title": "Backend", "subtext": "APIs for software, ETL for data", "software": "Software: Laravel/Django", "softwarePoints": "+20-22 points", "data": "Data: Pandas/ETL", "dataPoints": "+20 points", "apiDesign": "API Design", "apiDesignPoints": "+10 max", "pipeline": "Pipeline Complexity", "pipelinePoints": "+12 points" },
+        "database": { "title": "Database", "subtext": "SQL/NoSQL for both types", "systems": "PostgreSQL/MySQL", "systemsPoints": "+15-20 points", "orm": "ORM: SQLAlchemy", "ormPoints": "+12 points", "schema": "Schema Design", "schemaPoints": "+8 points", "multipleDB": "Multiple DB Support", "multipleDBPoints": "+7 points" },
+        "devops": { "title": "DevOps", "subtext": "Deployment for software, Orchestration for data", "software": "Software: Deployed to Production", "softwarePoints": "+25 points", "data": "Data: Apache Airflow", "dataPoints": "+22 points", "docker": "Docker", "dockerPoints": "+5-12 points", "cicd": "CI/CD", "cicdPoints": "+8 points" },
+        "features": { "title": "Features", "subtext": "Specialized features for each type", "software": "Software: Third-party Integrations", "softwarePoints": "+25 max", "data": "Data: PyTorch/TensorFlow", "dataPoints": "+20-22 points", "nlp": "NLP (NLTK/SpaCy)", "nlpPoints": "+9-18 points", "external": "Third-party Integrations", "externalPoints": "+12 max" }
+      },
+      "footer": {
+        "title": "Key Improvements in New Strategy:",
+        "description": "1. Automatic Detection: System identifies project type (Data Analyst vs Software Engineering)\n2. Specialized Calculators: Different scoring algorithms for different project types\n3. Higher Base Scores: Data projects start at 70 (not 60) to better represent their complexity\n4. GitHub Smart Routing: Public repos get GitHub analysis, private repos get calculator fallback"
+      },
+      "maxScore": "Max:"
+    }
+  }
+}
