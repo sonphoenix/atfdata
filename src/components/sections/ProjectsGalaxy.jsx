@@ -7,7 +7,7 @@ import { PersonaPointFound } from '../three/PersonaPointFound'
 import { PersonaCanvasOverlay } from '../three/PersonaCanvasOverlay'
 // import { PathEditorOverlay } from '../three/PathEditorOverlay'  // TEMPORARY: For path editing
 import { ControlsHUD, WorldTitle, PathLabels, StatsInfoButton } from '../three/UiComponents'
-import { startWormhole, notifySceneReady } from '../effects/WormholeOverlay'
+import { startWormhole, notifySceneReady } from '../effects/WormHoleOverlay'
 import { getProjectStats, clearStatsCache, forceRefreshStats } from '../utils/projectStatsService'
 import { ArrowLeft, Eye } from 'lucide-react'
 import { projectsGraph } from '../data/projectsGraph'
@@ -141,14 +141,14 @@ const ProjectsGalaxy = () => {
   }
 
   const handleProjectSelect = (project) => {
-    console.log('🎯 Project selected:', project.name)
+    //console.log('🎯 Project selected:', project.name)
     setSelectedProject(project)
     setZoomMode(true)
     setTimeout(() => setShowPointFound(true), 400)
   }
 
   const handleContinueToStats = async () => {
-    console.log('➡️ Continuing to stats modal')
+    //console.log('➡️ Continuing to stats modal')
     setShowPointFound(false)
     setShowStatsModal(true)
     if (!projectStats) {

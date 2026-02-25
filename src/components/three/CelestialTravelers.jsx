@@ -86,7 +86,7 @@ const CelestialTraveler = ({
       if (state.clock.elapsedTime >= delay) {
         hasStarted.current = true
         startTime.current = state.clock.elapsedTime
-        console.log('🚀 Celestial object started traveling:', type)
+        //console.log('🚀 Celestial object started traveling:', type)
       }
       return
     }
@@ -282,13 +282,13 @@ const generateCelestialPaths = () => {
 export const CelestialTravelers = ({ phase }) => {
   const objects = useMemo(() => {
     const generated = generateCelestialPaths()
-    console.log('✨ Generated celestial objects:', generated.length)
+    //console.log('✨ Generated celestial objects:', generated.length)
     return generated
   }, [])
   
   if (phase === 'exiting') return null
   
-  console.log('🌠 Rendering', objects.length, 'celestial travelers')
+  //console.log('🌠 Rendering', objects.length, 'celestial travelers')
   
   return (
     <group>

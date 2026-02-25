@@ -193,7 +193,6 @@ const StaticGalaxyView = () => {
     <>
       <PerspectiveCamera makeDefault position={[0, 15, 55]} fov={75} />
 
-      {/* White background matching the real GalaxyScene */}
       <color attach="background" args={['#ffffff']} />
 
       <ambientLight intensity={1.4} />
@@ -227,9 +226,11 @@ const StaticGalaxyView = () => {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-const PORTAL_RADIUS   = 1.8
+// ↓↓↓ ONLY THESE THREE VALUES CHANGED ↓↓↓
+const PORTAL_RADIUS   = 2.6   // was 1.8
 const OVAL_SCALE_Y    = 1.4
-const RIM_TUBE_RADIUS = 0.09
+const RIM_TUBE_RADIUS = 0.11  // was 0.09
+// ↑↑↑ everything else is identical ↑↑↑
 
 const PortalOval = ({ openProgress, isHovered }) => {
   const edgeRef    = useRef()
@@ -257,7 +258,6 @@ const PortalOval = ({ openProgress, isHovered }) => {
       <mesh scale={[1, OVAL_SCALE_Y, 1]}>
         <circleGeometry args={[PORTAL_RADIUS, 128]} />
         <portalSurfaceMaterial ref={surfaceRef} transparent depthWrite={false}>
-          {/* frames={1}: render once, never again */}
           <RenderTexture attach="uTexture" width={384} height={384} anisotropy={2} frames={1}>
             <StaticGalaxyView />
           </RenderTexture>
@@ -372,7 +372,8 @@ const Portal3DScene = ({
     mouse.current.y = -(e.clientY / size.height)  * 2 + 1
     if (openProgress > 0.5 && !isZooming) {
       const dist = Math.sqrt(mouse.current.x ** 2 + mouse.current.y ** 2)
-      setIsHovered(dist < 0.45)
+      // Wider hover zone to match bigger portal (was 0.45)
+      setIsHovered(dist < 0.62)
     }
   }
 

@@ -402,7 +402,7 @@ export const GalaxyScene = ({
   }, [currentNodeId, isMoving, currentNode, onSelectProject, selectedProject, sceneReady, zoomMode])
 
   const handleSceneReady = () => {
-    console.log('🎨 GalaxyScene ready!')
+    //console.log('🎨 GalaxyScene ready!')
     setSceneReady(true)
     if (onReady) onReady()
   }

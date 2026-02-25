@@ -17,7 +17,7 @@ export const AnimatedEarthScene = () => {
     setTexturePath(dayTime ? "/textures/world_day.jpg" : "/textures/world_night.jpg");
     
     // Optional: Log for debugging
-    console.log(`Local hour: ${hour}, isDay: ${dayTime}, texture: ${dayTime ? 'day' : 'night'}`);
+    //console.log(`Local hour: ${hour}, isDay: ${dayTime}, texture: ${dayTime ? 'day' : 'night'}`);
   }, []);
   
   const earthTexture = useLoader(THREE.TextureLoader, texturePath);
@@ -169,7 +169,7 @@ export const AnimatedEarthScene = () => {
       }
     });
 
-    console.log(`Created ${uniqueRoutes.length} strategic routes between ${cities.length} cities`);
+    //console.log(`Created ${uniqueRoutes.length} strategic routes between ${cities.length} cities`);
 
     // Create connection objects with proper validation
     const connections = uniqueRoutes.map(([i, j]) => {

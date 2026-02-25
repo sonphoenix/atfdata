@@ -8,7 +8,7 @@ import Footer from '../components/sections/Footer'
 import ChatBot from '../components/Chatbot'
 import Contact from '../components/sections/Contact' 
 import SceneWrapper from '../components/three/SceneWrapper'
-import { startWormhole, notifySceneReady } from '../components/effects/WormholeOverlay'
+import { startWormhole, notifySceneReady } from '../components/effects/WormHoleOverlay'
 
 const Home = ({ onLoadProgress }) => {
   const navigate = useNavigate()
@@ -19,11 +19,11 @@ const Home = ({ onLoadProgress }) => {
   const [isSceneReady, setIsSceneReady] = useState(false)
 
   useEffect(() => {
-    console.log('🔍 HOME: isSceneReady changed to:', isSceneReady)
+    //console.log('🔍 HOME: isSceneReady changed to:', isSceneReady)
   }, [isSceneReady])
 
   const handlePortalZoomStart = () => {
-    console.log('🚀 Starting portal zoom animation...')
+    //console.log('🚀 Starting portal zoom animation...')
     
     setIsPortalZooming(true)
     
@@ -38,16 +38,16 @@ const Home = ({ onLoadProgress }) => {
       const easedProgress = 1 - Math.pow(1 - progress, 3)
       setPortalZoomProgress(easedProgress)
       
-      console.log(`🎯 Portal zoom progress: ${(easedProgress * 100).toFixed(1)}%`)
+      //console.log(`🎯 Portal zoom progress: ${(easedProgress * 100).toFixed(1)}%`)
       
       if (progress < 1) {
         requestAnimationFrame(animateZoom)
       } else {
-        console.log('✅ Portal zoom complete! Starting wormhole...')
+        //console.log('✅ Portal zoom complete! Starting wormhole...')
         setIsPortalZooming(false)
         
         window.__projectsGalaxyReadyCallback = () => {
-          console.log('📡 ProjectsGalaxy ready signal received in Home callback')
+          //console.log('📡 ProjectsGalaxy ready signal received in Home callback')
           notifySceneReady()
           delete window.__projectsGalaxyReadyCallback
         }
@@ -55,12 +55,12 @@ const Home = ({ onLoadProgress }) => {
         startWormhole({
           waitForScene: true,
           onComplete: () => {
-            console.log('✨ Wormhole complete!')
+            //console.log('✨ Wormhole complete!')
           }
         })
         
         setTimeout(() => {
-          console.log('🚀 Navigating to projects...')
+          //console.log('🚀 Navigating to projects...')
           navigate('/projects')
         }, 500)
       }
@@ -70,20 +70,20 @@ const Home = ({ onLoadProgress }) => {
   }
 
   const handleSceneReady = () => {
-    console.log('🎨 HOME: handleSceneReady called! Setting isSceneReady = true')
+    //console.log('🎨 HOME: handleSceneReady called! Setting isSceneReady = true')
     setIsSceneReady(true)
   }
 
   useEffect(() => {
     const handleWormholeStart = (event) => {
       if (event.detail?.reverse) {
-        console.log('⏸️ Reverse wormhole detected - brief delay for smooth start')
+        //console.log('⏸️ Reverse wormhole detected - brief delay for smooth start')
         setCanRenderScene(false)
         setIsWaitingForWormhole(true)
         setIsSceneReady(false)
         
         setTimeout(() => {
-          console.log('▶️ Starting Home scene render')
+          //console.log('▶️ Starting Home scene render')
           setCanRenderScene(true)
         }, 800)
       }
@@ -91,7 +91,7 @@ const Home = ({ onLoadProgress }) => {
 
     const handleWormholeComplete = () => {
       if (isWaitingForWormhole) {
-        console.log('✅ Wormhole complete')
+        //console.log('✅ Wormhole complete')
         setCanRenderScene(true)
         setIsWaitingForWormhole(false)
       }
@@ -112,7 +112,7 @@ const Home = ({ onLoadProgress }) => {
     }
   }, [])
 
-  console.log('🏠 HOME RENDER: isSceneReady =', isSceneReady, 'canRenderScene =', canRenderScene)
+  //console.log('🏠 HOME RENDER: isSceneReady =', isSceneReady, 'canRenderScene =', canRenderScene)
 
  return (
     <div className="min-h-screen">

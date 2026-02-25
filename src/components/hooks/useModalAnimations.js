@@ -36,22 +36,22 @@ export const useModalAnimations = (selectedProject, onClose) => {
 
   // Trigger entrance animations
   const triggerAnimations = () => {
-    console.log('🚀 Triggering entrance animations')
+    //console.log('🚀 Triggering entrance animations')
     
     const timer1 = setTimeout(() => {
-      console.log('🚀 Triggering animateIn')
+      //console.log('🚀 Triggering animateIn')
       setAnimateIn(true)
     }, ANIMATION_TIMINGS.ENTRANCE_ANIMATION)
     animationTimeoutsRef.current.push(timer1)
     
     const timer2 = setTimeout(() => {
-      console.log('📦 Triggering modelAnimateIn')
+      //console.log('📦 Triggering modelAnimateIn')
       setModelAnimateIn(true)
     }, ANIMATION_TIMINGS.MODEL_ANIMATION_DELAY)
     animationTimeoutsRef.current.push(timer2)
     
     const timer3 = setTimeout(() => {
-      console.log('⭐ Triggering starAnimateIn')
+      //console.log('⭐ Triggering starAnimateIn')
       setStarAnimateIn(true)
     }, ANIMATION_TIMINGS.STAR_ANIMATION_DELAY)
     animationTimeoutsRef.current.push(timer3)
@@ -69,10 +69,10 @@ export const useModalAnimations = (selectedProject, onClose) => {
 
   // Handle close with epic animation sequence
   const handleClose = () => {
-    console.log("🔄 PersonaStatsModal: EPIC CLOSE triggered")
+    //console.log("🔄 PersonaStatsModal: EPIC CLOSE triggered")
     
     if (isClosing) {
-      console.log("❌ handleClose: Already closing, ignoring")
+      //console.log("❌ handleClose: Already closing, ignoring")
       return
     }
     
@@ -83,16 +83,16 @@ export const useModalAnimations = (selectedProject, onClose) => {
       document.activeElement.blur()
     }
     
-    console.log("⏩ handleClose: Setting isClosing=true, animateOut=true")
+    //console.log("⏩ handleClose: Setting isClosing=true, animateOut=true")
     setIsClosing(true)
     setAnimateOut(true)
     setModelAnimateIn(false)
     setStarAnimateIn(false)
     setAnimateIn(false)
     
-    console.log("⏳ handleClose: Starting exit timeout")
+    //console.log("⏳ handleClose: Starting exit timeout")
     closeTimeoutRef.current = setTimeout(() => {
-      console.log("✅ handleClose: EPIC close complete, calling onClose()")
+      //console.log("✅ handleClose: EPIC close complete, calling onClose()")
       onClose()
     }, ANIMATION_TIMINGS.CLOSE_DURATION)
   }
@@ -102,11 +102,11 @@ export const useModalAnimations = (selectedProject, onClose) => {
     cleanupTimers()
     
     if (!selectedProject) {
-      console.log('=== PersonaStatsModal: No project selected ===')
+      //console.log('=== PersonaStatsModal: No project selected ===')
       return
     }
     
-    console.log('🎬 PersonaStatsModal MOUNT: Starting animations')
+    //console.log('🎬 PersonaStatsModal MOUNT: Starting animations')
     resetAnimations()
     
     return cleanupTimers

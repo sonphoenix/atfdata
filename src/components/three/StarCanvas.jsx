@@ -36,7 +36,7 @@ export const StarCanvas = ({ projectStats, starAnimateIn, animateOut }) => {
               maxValue={100} 
               animateIn={starAnimateIn && !animateOut}
               onFlip={() => {
-                console.log("⭐ Star flipped!")
+                //console.log("⭐ Star flipped!")
               }}
             />
           </Suspense>

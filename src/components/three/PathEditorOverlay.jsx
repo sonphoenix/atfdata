@@ -4,7 +4,7 @@ export const PathEditorOverlay = () => {
   const canvasRef = useRef(null)
   const animationRef = useRef(null)
   
-  console.log('🎨 PathEditorOverlay rendering!')
+  //console.log('🎨 PathEditorOverlay rendering!')
   
   // Path 1 controls
   const [path1, setPath1] = useState({

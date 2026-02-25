@@ -16,7 +16,7 @@ export const ScenePrewarmer = ({ onReady }) => {
     // Give the scene a moment to fully initialize
     const timer = setTimeout(() => {
       try {
-        console.log('🔥 Pre-warming scene...')
+        //console.log('🔥 Pre-warming scene...')
         
         // Force compile all materials in the scene
         gl.compile(scene, camera)
@@ -26,7 +26,7 @@ export const ScenePrewarmer = ({ onReady }) => {
         
         // Mark as complete
         hasPrewarmed.current = true
-        console.log('✅ Scene pre-warmed successfully')
+        //console.log('✅ Scene pre-warmed successfully')
         
         // Notify parent that scene is ready
         if (onReady) {

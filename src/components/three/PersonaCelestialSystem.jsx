@@ -154,7 +154,7 @@ const VisibleStarOnLoop = ({
 
 // DEBUG VERSION - Everything VISIBLE
 export const PersonaCelestialSystem = () => {
-  console.log('🌟 PersonaCelestialSystem rendering!')
+  //console.log('🌟 PersonaCelestialSystem rendering!')
   
   return (
     <group>

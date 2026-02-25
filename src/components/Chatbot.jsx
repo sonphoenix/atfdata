@@ -41,7 +41,7 @@ const ChatBot = () => {
           layout: "month_view",
           theme: "dark"
         });
-        console.log("✅ Cal.com initialized successfully");
+        //console.log("✅ Cal.com initialized successfully");
       } catch (error) {
         console.error("❌ Cal.com init failed:", error);
       }

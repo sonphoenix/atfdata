@@ -40,7 +40,7 @@ const WormholeOverlay = () => {
     // Listen for wormhole start event
     const handleStart = (event) => {
       const reverse = event.detail?.reverse || false
-      console.log(`🌀 WormholeOverlay: Starting transition (reverse: ${reverse})`)
+      //////console.log(`🌀 WormholeOverlay: Starting transition (reverse: ${reverse})`)
       setIsActive(true)
       setIsReverse(reverse) // Set reverse state
       setIsWaitingForScene(event.detail?.waitForScene || false)
@@ -56,14 +56,14 @@ const WormholeOverlay = () => {
 
     // Listen for scene ready event
     const handleSceneReady = () => {
-      console.log('✅ WormholeOverlay: Scene ready signal received')
+      //////console.log('✅ WormholeOverlay: Scene ready signal received')
       setIsWaitingForScene(false)
       wormholeState.setSceneReady(true)
     }
 
     // Listen for wormhole stop event
     const handleStop = () => {
-      console.log('⏹️ WormholeOverlay: Stopping transition')
+      //////console.log('⏹️ WormholeOverlay: Stopping transition')
       setIsActive(false)
       setIsWaitingForScene(false)
       setIsReverse(false)
@@ -85,7 +85,7 @@ const WormholeOverlay = () => {
   }, [])
 
   const handleComplete = () => {
-    console.log('✨ WormholeOverlay: Transition complete')
+    //////console.log('✨ WormholeOverlay: Transition complete')
     wormholeState.setActive(false)
     wormholeState.setSceneReady(false)
     

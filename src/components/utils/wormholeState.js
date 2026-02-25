@@ -12,7 +12,7 @@ class WormholeState {
     this.isActive = isActive
     
     if (!isActive && oldState) {
-      console.log('🌀 WormholeState: Transition complete, triggering callbacks')
+      //console.log('🌀 WormholeState: Transition complete, triggering callbacks')
       // Execute all registered callbacks
       this.onCompleteCallbacks.forEach(callback => {
         try {

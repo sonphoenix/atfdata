@@ -6,7 +6,7 @@ import * as THREE from 'three'
 export const WireframeDiamondGrid = () => {
   const groupRef = useRef()
   
-  console.log('🔷 WireframeDiamondGrid rendering!')
+  //console.log('🔷 WireframeDiamondGrid rendering!')
   
   // Create VISIBLE wireframe
   const geometry = useMemo(() => {

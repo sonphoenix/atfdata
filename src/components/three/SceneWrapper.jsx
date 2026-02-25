@@ -25,13 +25,13 @@ const SceneWrapper = ({
   const { progress, active } = useProgress()
 
   useEffect(() => {
-    console.log('📊 SceneWrapper progress:', progress, 'active:', active)
+    //console.log('📊 SceneWrapper progress:', progress, 'active:', active)
     
     if (onLoadProgress && !hasCalledReady.current) {
       onLoadProgress(progress)
       
       if (progress === 100 && !active && !hasCalledReady.current) {
-        console.log('✅ SceneWrapper: Loading complete!')
+        //console.log('✅ SceneWrapper: Loading complete!')
         hasCalledReady.current = true
         setIsLoaded(true)
         
@@ -45,7 +45,7 @@ const SceneWrapper = ({
   }, [progress, active, onLoadProgress, onSceneReady])
 
   useEffect(() => {
-    console.log('🎬 SceneWrapper isPaused:', isPaused)
+    //console.log('🎬 SceneWrapper isPaused:', isPaused)
   }, [isPaused])
 
   useEffect(() => {

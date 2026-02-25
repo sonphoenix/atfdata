@@ -278,9 +278,9 @@ const WormholeTransition = ({
       // NEW: Set fallback timeout if waiting for scene
       // After 3.5 seconds, force continue even if scene not ready
       if (waitForReady && !reverse) {
-        console.log('⏰ Setting 3.5s fallback timeout for scene load...')
+        //console.log('⏰ Setting 3.5s fallback timeout for scene load...')
         fallbackTimeoutRef.current = setTimeout(() => {
-          console.log('⚠️ Fallback timeout reached - forcing wormhole to continue')
+          //console.log('⚠️ Fallback timeout reached - forcing wormhole to continue')
           isWaitingRef.current = false
         }, 3500)
       }
@@ -290,7 +290,7 @@ const WormholeTransition = ({
   // When waitForReady becomes false, complete the transition
   useEffect(() => {
     if (isWaitingRef.current && !waitForReady) {
-      console.log('🎯 Scene ready! Completing wormhole transition...')
+      //console.log('🎯 Scene ready! Completing wormhole transition...')
       isWaitingRef.current = false
       
       // Clear fallback timeout if scene loaded in time
@@ -322,7 +322,7 @@ const WormholeTransition = ({
       progressRef.current = Math.max(0, progressRef.current - delta / duration)
     } else {
       if (waitForReady && progressRef.current >= holdThreshold && !isWaitingRef.current) {
-        console.log('⏸️ Reached 75% - holding for scene to load...')
+        //console.log('⏸️ Reached 75% - holding for scene to load...')
         isWaitingRef.current = true
       }
       
@@ -427,7 +427,7 @@ const WormholeTransition = ({
     // Completion check
     const isComplete = reverse ? progress <= 0 : (progress >= 1 && hasReachedMinDuration)
     if (isComplete && onComplete) {
-      console.log(`✨ Wormhole complete! Duration: ${elapsedTime.toFixed(2)}s`)
+      //console.log(`✨ Wormhole complete! Duration: ${elapsedTime.toFixed(2)}s`)
       progressRef.current = reverse ? 1 : 0
       speedRef.current = 0
       isWaitingRef.current = false

@@ -10,7 +10,7 @@ const useLoadingManager = () => {
 
   // Handle Three.js progress - NO DELAYS!
   const handleThreeProgress = useCallback((progress) => {
-    console.log('📊 useLoadingManager: Received progress:', progress)
+    //console.log('📊 useLoadingManager: Received progress:', progress)
     
     setUseRealProgress(true)
     setLoadingProgress(progress)
@@ -25,7 +25,7 @@ const useLoadingManager = () => {
       setLoadingStatus('Finalizing scene...')
     } else {
       setLoadingStatus('Ready!')
-      console.log('✅ useLoadingManager: Progress 100 - hiding loading screen IMMEDIATELY')
+      ////console.log('✅ useLoadingManager: Progress 100 - hiding loading screen IMMEDIATELY')
       setIsLoading(false) // NO DELAY!
     }
   }, [])
@@ -59,7 +59,7 @@ const useLoadingManager = () => {
             setTimeout(() => {
               setLoadingStatus('Almost ready...')
               setTimeout(() => {
-                console.log('🎬 useLoadingManager (simulated): Setting isLoading to FALSE')
+                ////console.log('🎬 useLoadingManager (simulated): Setting isLoading to FALSE')
                 setIsLoading(false)
               }, 300) // Reduced delay
             }, 200)
@@ -96,7 +96,7 @@ const useLoadingManager = () => {
   }, [checkWebGLSupport, simulateLoading])
 
   useEffect(() => {
-    console.log('🔄 useLoadingManager: isLoading =', isLoading)
+    ////console.log('🔄 useLoadingManager: isLoading =', isLoading)
   }, [isLoading])
 
   return {

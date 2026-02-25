@@ -27,7 +27,7 @@ const PortalTransition = ({ isActive, onComplete }) => {
       oscillator.start(audioContext.currentTime)
       oscillator.stop(audioContext.currentTime + duration)
     } catch (e) {
-      console.log('Audio not supported')
+      //console.log('Audio not supported')
     }
   }
 
