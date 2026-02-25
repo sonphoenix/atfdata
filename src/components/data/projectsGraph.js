@@ -11,13 +11,23 @@ export const projectsGraph = {
       id: 'proj-1',
       position: [-30, 0, 0],
       project: {
-        name: 'Portfolio Start',
-        description: 'ATF-DATA Website',
-        tech: ['HTML', 'CSS', 'JavaScript', 'Three.js', 'React three fiber'],
-        image: '🚀',
-        github: 'https://github.com/sonphoenix',
+        name: 'ATF Data Website',
+        description: 'This very site — a gamified freelance portfolio built like a video game. Visitors navigate a 3D space galaxy with WASD or a gamepad, docking onto project planets displayed as RPG-style cards. Features live GitHub API integration for real-time repo stats, a radar chart scoring system, multi-language support, and two navigable career paths: Full-Stack Development and Data Analysis.',
+        tech: ['React', 'Three.js', 'React Three Fiber', 'TailwindCSS', 'Vite', 'i18next', 'GSAP'],
+        image: '/logo/Logo_final.svg',
+        isLogo: true,
+        github: 'https://github.com/sonphoenix/atfdata',
+        live: 'https://atfdata.com',
         hasRepo: true,
-        isPublic: true
+        hasModel: true,
+        isPublic: true,
+        manualStats: {
+          frontend: 95,
+          backend: 78,
+          database: 70,
+          devops: 82,
+          features: 92
+        }
       },
       connections: ['proj-2', 'proj-3']
     },

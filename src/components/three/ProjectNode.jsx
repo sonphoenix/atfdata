@@ -1,6 +1,6 @@
 import { useRef, Suspense } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { Text } from '@react-three/drei'
+import { Text, useTexture } from '@react-three/drei'
 import { 
   JapaneseHouseModel, 
   PizzaModel, 
@@ -16,6 +16,25 @@ import {
   ChartModel,
   CarModel
 } from './Models3D'
+
+// ─── Logo plane for proj-1 ────────────────────────────────────────────────────
+// Loads /logo/Logo_final.svg as a texture and renders it on a flat plane above
+// the landing pad, same position as the emoji Text nodes on other projects.
+const LogoPlane = () => {
+  const texture = useTexture('/logo/Logo_final.svg')
+  return (
+    <mesh position={[0, 2, 0]}>
+      {/* 3 units wide, 3 tall — adjust to taste */}
+      <planeGeometry args={[3, 3]} />
+      <meshBasicMaterial
+        map={texture}
+        transparent
+        alphaTest={0.01}
+        depthWrite={false}
+      />
+    </mesh>
+  )
+}
 
 export const ProjectNode = ({ 
   node, 
@@ -72,8 +91,17 @@ export const ProjectNode = ({
         />
       </mesh>
 
-      {/* Project emoji/icon or 3D model */}
-      {node.id === 'proj-16' && project.hasModel ? (
+      {/* Project icon / 3D model */}
+      {node.id === 'proj-1' ? (
+        // SVG logo rendered as a texture plane
+        <Suspense fallback={
+          <Text position={[0, 2, 0]} fontSize={1.5} color="#333333" anchorX="center" anchorY="middle">
+            🚀
+          </Text>
+        }>
+          <LogoPlane />
+        </Suspense>
+      ) : node.id === 'proj-16' && project.hasModel ? (
         <Suspense fallback={
           <Text position={[0, 2, 0]} fontSize={1} color="white" anchorX="center" anchorY="middle">
             🏮
@@ -169,15 +197,15 @@ export const ProjectNode = ({
         }>
           <ChartModel />
         </Suspense>
-      ): node.id === 'proj-15' && project.hasModel ? (
+      ) : node.id === 'proj-15' && project.hasModel ? (
         <Suspense fallback={
           <Text position={[0, 2, 0]} fontSize={1} color="white" anchorX="center" anchorY="middle">
             🚗
           </Text>
         }>
           <CarModel />
-        </Suspense>)
-       : (
+        </Suspense>
+      ) : (
         <Text position={[0, 2, 0]} fontSize={1.5} color="#333333" anchorX="center" anchorY="middle">
           {project.image}
         </Text>

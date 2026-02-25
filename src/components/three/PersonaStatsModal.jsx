@@ -60,8 +60,9 @@ const ModalInner = ({ selectedProject, onClose }) => {
 
   // ── State machine ───────────────────────────────────────────────────────────
   const {
-    navState, imageIndex, dropdownIndex,
-    handleAction, openShowcase, setImageIndex, goModal,
+  navState, imageIndex, dropdownIndex,
+  handleAction, openShowcase, setImageIndex,
+  goModal, goDropdown,
   } = useNavState({
     hasImages,
     imageCount:    allImageUrls.length,
@@ -207,7 +208,10 @@ const ModalInner = ({ selectedProject, onClose }) => {
 
             <StatusDropdown
               showActions={navState === NAV_STATE.DROPDOWN}
-              setShowActions={(val) => val ? null : goModal()}  // mouse click to close
+              setShowActions={() => {
+                if (navState === NAV_STATE.DROPDOWN) goModal()
+                else goDropdown()
+              }}
               animateOut={animateOut}
               github={github} live={live} playStore={playStore}
               selectedActionIndex={dropdownIndex}
